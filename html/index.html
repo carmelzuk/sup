@@ -38,7 +38,18 @@
                             <span>Basic</span>
                     </h2>
                   
-                  
+                  <div class='node-content clear-block prose'>
+      <div id='diff-inline-115'><p>Add a bin dir to your path:</p>
+
+<p>&nbsp;</p>
+<p><span class="shell">mkdir ~/bin</span></p>
+<p>Add this to <span class="shell">~/.bashrc</span> file:</p>
+
+<p><span class="shell">PATH=$PATH:~/bin; export PATH</span></p>
+
+<p>Install vim</p>
+<span class="shell">sudo apt-get install vim</span></p>
+</div>    </div>
                       
                 </div>
 
@@ -155,6 +166,12 @@
 <p><span class="shell">sudo chmod 777 dsyf.com</span></p>
 <p><span class="shell">sudo chown $USER:$USER dsyf.com</span></p>
 <p><span class="shell">git clone git@github.com:UIU/bsyfuiu.git /var/www/dsyf.com</span></p>
+
+<a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/">install mongo</a>
+<p>Install composer (see "Composer" section)</p>
+<p>Let composer get you all you need for the site</p>
+<p><span class="shell">cd /var/www/dsyf.com<br>
+composer install</span></p>
 </div>    </div>
   
       
@@ -169,16 +186,25 @@
     </h2>
   
       <div class='node-content clear-block prose'>
-      <div id='diff-inline-115'><p>To install composer you need to have curl and php</p>
+      <div id='diff-inline-115'>
+<a href="http://getcomposer.org/download/"> See composer download page</a>
+<p>To install composer you need to have curl and php</p>
 <p>&nbsp;</p>
 <p><span class="shell">sudo apt-get install curl</span></p>
 <p>You also need the php json extension</p>
 <p><span class="shell">sudo apt-get install php5-json</span></p>
-<p><span class="shell">sudo curl -sS https://getcomposer.org/installer | php</span></p><!--
-<p><span style="font-family:courier new,courier,monospace;">cd /var/www;</span></p>
-<p><span style="font-family:courier new,courier,monospace;">sudo chmod 777 dsyf.com</span></p>
-<p><span style="font-family:courier new,courier,monospace;">sudo chown $USER:$USER dsyf.com</span></p>
-<p><span style="font-family:courier new,courier,monospace;">git clone git@github.com:UIU/bsyfuiu.git</span> <span style="font-family:courier new,courier,monospace;">/var/www/dsyf.com</span>;</p>-->
+<p><span class="shell">sudo curl -sS https://getcomposer.org/installer | php</span></p>
+<p>&nbsp;</p>
+<p>Make the composer command easy to use:</p>
+<p>(see "Basic" section for adding bin to path)</p>
+<p><span class="shell">touch ~/bin/composer</span></p>
+<p><span class="shell">vim ~/bin/composer</span></p>
+<p>Write this to the file:</p>
+<p><span class="shell">#!/bin/bash<br>
+php ~/tmp/composer.phar $@</span></p>
+<p>and save. 
+Make the script executable</p>
+<p><span class="shell">chmod +x ~/bin/composer</span></p>
 </div>    </div>
   
       
