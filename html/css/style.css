@@ -54,3 +54,7 @@ body{
 pre .command {
     float: left;
 }
+
+.shell {
+	font-family:courier new,courier,monospace;
+}
