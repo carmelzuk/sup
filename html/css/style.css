@@ -50,3 +50,7 @@ body{
 .content-h2 {
     border-bottom: 1px solid #ccc;
 }
+
+pre .command {
+    float: left;
+}
