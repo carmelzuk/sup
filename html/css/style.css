@@ -57,4 +57,6 @@ pre .command {
 
 .shell {
 	font-family:courier new,courier,monospace;
+    background-color: #ccc;
+    padding: 5px 0;
 }
