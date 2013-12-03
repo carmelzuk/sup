@@ -1,0 +1,52 @@
+
+body{
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+#sandbar {
+}
+
+#sandbar #header {
+    box-sizing: border-box;
+    width: 100%;
+    
+    position: relative;
+    background: #f1f1f1;
+    border-bottom: 1px solid #e5e5e5;
+    height: 77px;
+    margin: 0;
+    overflow: hidden;
+    padding: 24px 44px;
+    color: rgba(255,255,255,0.5);
+}
+
+#side-nav {
+    width: 160px;
+    margin-right: -40px;
+    padding: 12px 0;
+    vertical-align: top;
+    float: left;
+}
+
+#side-nav .tlw-title {
+    
+    cursor: pointer;
+}
+
+#content {
+    margin-left: 176px;
+    max-width: 1040px;
+    vertical-align: top;
+    padding-top: 14px;
+}
+
+.content-title {
+    font-size: 2em;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-h2 {
+    border-bottom: 1px solid #ccc;
+}
